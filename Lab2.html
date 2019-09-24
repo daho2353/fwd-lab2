@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Damian Howard - Lab 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/lab2.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2> TAM Student Survey </h2>
+    <form>
+        <div class="question">
+            <h3> What is your name? </h3>
+            <input type="text" id="name">
+        </div>
+        <div class="question">
+            <h3> What year are you? </h3>
+            <div>
+                <input type ="radio" name="year" id="freshman" value="0">
+                <label for="freshman"> Freshman </label>
+            </div>
+            <div>
+                <input type ="radio" name="year" id="sophmore" value="1">
+                <label for="sophmore"> Sophmore </label>
+            </div>
+            <div>
+                <input type ="radio" name="year" id="junior" value="2">
+                <label for="junior"> Junior </label>
+            </div>
+            <div>
+                <input type ="radio" name = "year" id="senior" value="3">
+                <label for="senior"> Senior</label>
+            </div>
+            <div>
+                <input type ="radio" name = "year" id="supersenior" value="4">
+                <label for="supersenior"> Super Senior/ Grad </label>
+            </div>
+        </div>
+        <div class="question">
+            <h3> What Core TAM classes have you taken? </h3>
+            <div id="mitshow">
+                <input type="checkbox" id="mitcb" value="Meaning of Information Technology" onclick="function()">
+                <label for="mitcb"> ATLS 2000 Meaning of Information Technology </label>
+            </div>
+            <div id="dfshow">
+                <input type="checkbox" id="dfcb" value="Design Foundations">
+                <label for="dfcb"> ATLS 1100 Design Foundations </label>
+            </div>
+            <div id="imgshow">
+                <input type="checkbox" id="imgcb" value="Image">
+                <label for="imgcb"> ATLS 2100 Image </label>
+            </div>
+            <div id="webshow">
+                <input type="checkbox" id="webcb" value="2200Web">
+                <label for="webcb"> ATLS 2200 Web</label>
+            </div>
+            <div id="textshow">
+                <input type="checkbox" id="textcb" value="2300Text">
+                <label for="textcb"> ATLS 2300 Text </label>
+            </div>
+            <div id="codeshow">
+                <input type="checkbox" id="codecb" value="3000Code">
+                <label for="codecb"> ATLS 3000 Code</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3> Which class was your favorite? </h3>
+            <div id="mithidden">
+                <input type ="radio" name ="class" id="mitr" value="0">
+                <label for="mitr"> ATLS 2000 Meaning of Information Technology </label>
+            </div>
+            <div id="dfhidden">
+                <input type="radio" name="class" id="dfr" value="1">
+                <label for="dfr"> ATLS 1100 Design Foundations </label>
+            </div>
+            <div id="imghidden">
+                <input type="radio" name="class" id="imgr" value="2">
+                <label for="imgr"> ATLS 2100 Image </label>
+            </div>
+            <div id="webhidden">
+                <input type="radio" name="class" id="webr" value="3">
+                <label for="webr"> ATLS 2200 Web </label>
+            </div>
+            <div id="texthidden">
+                <input type="radio" name="class" id="textr" value="4">
+                <label for="textr"> ATLS 2300 Text</label>
+            </div>
+            <div id="codehidden">
+                <input type="radio" name="class" id="coder" value="5">
+                <label for="coder"> ATLS 3000 Code</label>
+            </div>
+            <div>
+                <input type="radio" name="class" id="noner" value="6">
+                <label for="noner"> N/A </label>
+            </div>
+        </div>
+        <h3> Results: </h3>
+        <textarea id="results" rows="10" cols="30"></textarea> 
+    </form>
+    <button type="button" id="submit"> Submit </button>
+    <script src="js/lab2.js"></script>
+</body>
+</html>
